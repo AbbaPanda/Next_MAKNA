@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
+import clsx from 'clsx';
 
 const getPoppins = Poppins({
   weight: ['400', '500', '600', '700'],
-  style: ['normal', 'italic'],
+  style: ['normal'],
   subsets: ['latin'],
   variable: '--font-poppins',
 });
@@ -21,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${getPoppins.variable} antialiased`}>{children}</body>
+      <body className={clsx(getPoppins.variable, "antialiased")}>{children}</body>
     </html>
   );
 }
