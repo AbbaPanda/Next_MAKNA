@@ -69,7 +69,7 @@ export default {
           to: { transform: 'translateX(calc(-100% - var(--gap)))' },
         },
         'marquee-vertical': {
-          from: { transform: 'translateY(0)' },
+          from: { transform: 'translateY(0)' }, 
           to: { transform: 'translateY(calc(-100% - var(--gap)))' },
         },
       },
