@@ -9,6 +9,7 @@ export default function Home() {
       <h1 className='flex justify-center gap-3 bg-amber-600'>
         menjadi lebih baik dari dalam
       </h1>
+      <Button className='bg-neutral-400 hover:bg-red-500'>Contact Us</Button>
     </div>
   );
 }

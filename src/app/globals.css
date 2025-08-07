@@ -203,7 +203,7 @@
 
 body {
   @apply bg-neutral-900 text-base-white text-sm font-normal;
-  font-family: var(--font-family-primary);
+  font-family: var(--font-poppins);
 }
 
 @layer components {
