@@ -1,15 +1,11 @@
 import { Button } from '@/components/ui/button';
 import { Poppins } from 'next/font/google';
+import Navbar from './home/partials/navbar';
 
 export default function Home() {
   return (
-    <div className='grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-sans sm:p-20'>
-      <h1> MAKNA </h1>
-      <Button>Transform Now</Button>
-      <h1 className='flex justify-center gap-3 bg-amber-600'>
-        menjadi lebih baik dari dalam
-      </h1>
-      <Button className='bg-neutral-400 hover:bg-red-500'>Contact Us</Button>
+    <div className='min-h-[2000px]'>
+      <Navbar />
     </div>
   );
 }

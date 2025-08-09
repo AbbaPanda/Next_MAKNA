@@ -202,7 +202,7 @@
 /* end of shadcn ui */
 
 body {
-  @apply bg-neutral-900 text-base-white text-sm font-normal;
+  @apply text-base-white bg-neutral-900 font-normal;
   font-family: var(--font-poppins);
 }
 
