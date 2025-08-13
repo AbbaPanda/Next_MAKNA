@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { navigationData } from '@/app/constants/navigation-data';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Fullscreen, Menu } from 'lucide-react';
 
 const Navbar = () => {
@@ -47,9 +47,11 @@ const Navbar = () => {
           </ul>
         </nav>
         <div className='flex items-center'>
-          <Button className='hidden md:flex text-sm font-semibold'>
-            <Link href='/contact'>Mulai Disini</Link>
-          </Button>
+          <div>
+            <Button className='hidden md:flex text-sm font-semibold'>
+              <Link href='/contact'>Mulai Disini</Link>
+            </Button>
+          </div>
           {/* hamburger menu */}
           <Sheet>
             <SheetTrigger>
@@ -61,11 +63,18 @@ const Navbar = () => {
                   {navigationData.map((data) => (
                     <li key={data.title} className='mb-2'>
                       <Link className='md:font-semibold md:text-md font-semibold block p-4 text-lg transition-all duration-300 ease-in-out hover:text-primary-200 hover:shadow-amber-300 active:text-primary-200 active:shadow-amber-300'
-                        href={data.href}>{data.title}</Link>
+                        href={data.href}
+                      >
+                        {data.title}</Link>
                     </li>
                   ))}
                 </ul>
               </nav>
+              <SheetClose asChild>
+                <Button className='text-sm font-semibold '>
+                  <Link href='/contact'>Mulai Disini</Link>
+                </Button>
+              </SheetClose>
             </SheetContent>
           </Sheet>
         </div>

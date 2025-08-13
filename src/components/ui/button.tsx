@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-amber-600 hover:bg-blue-500 text-white font-bold rounded-full hover:shadow-[0_0_32px_rgba(248,162,4,0.6)]',
+          'bg-amber-600 hover:bg-amber-400 text-white font-bold rounded-full hover:shadow-[0_0_32px_rgba(248,162,4,0.6)]',
       },
       size: {
         default: 'h-9 px-4 py-2 has-[>svg]:px-3',
