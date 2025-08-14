@@ -1,11 +1,11 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/assets/components/ui/button';
 import Link from 'next/link';
 import { navigationData } from '@/app/constants/navigation-data';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/assets/components/ui/sheet';
 import { Fullscreen, Menu } from 'lucide-react';
 
 const Navbar = () => {
